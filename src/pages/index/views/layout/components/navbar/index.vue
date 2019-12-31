@@ -8,6 +8,10 @@
             <b-navbar-nav>
                 <b-nav-item href="#">Link</b-nav-item>
                 <b-nav-item href="#" disabled>Disabled</b-nav-item>
+                <b-nav-item-dropdown text="测试下拉">
+                    <b-dropdown-item href="#">连接1</b-dropdown-item>
+                    <b-dropdown-item href="#">链接2</b-dropdown-item>
+                </b-nav-item-dropdown>
             </b-navbar-nav>
 
             <!-- Right aligned nav items -->
