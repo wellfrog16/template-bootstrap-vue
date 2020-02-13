@@ -1,4 +1,4 @@
-# template-bootsrape-vue
+# template-bootstrape-vue
 
 ## 说明
 

@@ -1,6 +1,8 @@
 <template>
     <b-container>
-        <b-breadcrumb :items="items"></b-breadcrumb>
+        <b-row cols="1">
+            <b-breadcrumb :items="items"></b-breadcrumb>
+        </b-row>
     </b-container>
 </template>
 

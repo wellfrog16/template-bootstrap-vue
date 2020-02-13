@@ -1,7 +1,20 @@
 <template>
-    <div class="container">
-        <div :class="$style.main">首页</div>
-    </div>
+    <b-container :class="[$style.main, 'py-3']">
+        <b-row>
+            <b-col>Column</b-col>
+            <b-col cols="5">Column</b-col>
+            <b-col>Column</b-col>
+            <b-col>Column</b-col>
+            <b-col>Column</b-col>
+        </b-row>
+        <b-row cols="3">
+            <b-col>Column</b-col>
+            <b-col>Column</b-col>
+            <b-col>Column</b-col>
+            <b-col>Column</b-col>
+            <b-col>Column</b-col>
+        </b-row>
+    </b-container>
 </template>
 
 <script>
