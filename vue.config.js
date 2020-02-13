@@ -1,4 +1,3 @@
-const LessPluginFun = require('less-plugin-functions');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const path = require('path'); // eslint-disable-line
 const pages = require('./build/pages');
@@ -55,9 +54,9 @@ module.exports = {
         sourceMap: false,
         // css预设器配置项
         loaderOptions: {
-            less: {
-                plugins: [new LessPluginFun()],
-            },
+            // less: {
+            //     plugins: [new LessPluginFun()],
+            // },
             // postcss: {
             //     plugins: [
             //         require('postcss-pxtorem') ({ // eslint-disable-line

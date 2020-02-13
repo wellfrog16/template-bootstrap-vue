@@ -12,7 +12,7 @@ export default {
 };
 </script>
 
-<style lang="less" module>
+<style lang="scss" module>
 .main {
     max-width: 1440px;
     margin: 0 auto;

@@ -27,5 +27,5 @@ export default {
 };
 </script>
 
-<style lang="less" module>
+<style lang="scss" module>
 </style>

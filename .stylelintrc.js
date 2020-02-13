@@ -1,6 +1,9 @@
 module.exports = {
     // 'processors': ['@mapbox/stylelint-processor-arbitrary-tags'],
     extends: 'stylelint-config-standard',
+    plugins: [
+        'stylelint-scss',
+    ],
     rules: {
         indentation: 4, // 4个空格
         'no-empty-source': null,
@@ -16,5 +19,9 @@ module.exports = {
         'selector-pseudo-class-no-unknown': [true, { ignorePseudoClasses: ['global'] }],
         'selector-list-comma-newline-after': 'always-multi-line', // 不允许多行
         'no-descending-specificity': null, // 此功能bug太多
+
+        // stylelint-scss
+        'at-rule-no-unknown': null,
+        'scss/at-rule-no-unknown': true,
     },
 };

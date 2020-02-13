@@ -17,6 +17,6 @@ export default {
 };
 </script>
 
-<style lang="less">
-@import '../../assets/style/usr/index.less';
+<style lang="scss">
+@import '../../assets/style/usr/index.scss';
 </style>

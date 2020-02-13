@@ -21,7 +21,7 @@ export default {
 };
 </script>
 
-<style lang="less" module>
+<style lang="scss" module>
 .main {
     padding-top: 72px;
 }

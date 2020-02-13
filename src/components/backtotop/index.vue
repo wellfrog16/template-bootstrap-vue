@@ -42,8 +42,8 @@ export default {
 };
 </script>
 
-<style lang="less" module>
-@import '~@/assets/style/usr/index.config.less';
+<style lang="scss" module>
+@import '~@/assets/style/usr/index.config.scss';
 
 .main {
     position: fixed;
@@ -52,7 +52,7 @@ export default {
     width: 40px;
     height: 40px;
     font-size: 20px;
-    background-color: @g-color-primary;
+    background-color: $g-color-primary;
     color: #fff;
     border-radius: 10px;
     cursor: pointer;

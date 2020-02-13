@@ -13,7 +13,7 @@ export default {
 };
 </script>
 
-<style lang="less" module>
+<style lang="scss" module>
 .main {
     height: 1500px;
     background-color: #f3f3f3;

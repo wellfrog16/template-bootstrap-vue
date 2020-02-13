@@ -1,0 +1,16 @@
+// icon图标样式专用scss
+// scss 不支持image-width，尽量使用icon-font来实现
+
+.icon {
+    background-size: contain;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+.icon-col-active {
+    background-position-y: 100%;
+}
+
+.icon-row-active {
+    background-position-x: 100%;
+}
