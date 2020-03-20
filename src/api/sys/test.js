@@ -5,7 +5,7 @@ const axios = instance();
 
 const test = () => {
     const options = {
-        transformResponse: [(data) => {
+        transformResponse: [data => {
             console.log(5678);
             return data;
         }],

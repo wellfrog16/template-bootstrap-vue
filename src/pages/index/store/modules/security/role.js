@@ -1,7 +1,7 @@
-import apiStore from '#index/store/common/apiStore';
 import { utils } from '@/utils/rivers';
 import api from '@/api/sys/security/role';
 import { RES_LIST } from '@/helper/constant';
+import apiStore from '#index/store/common/apiStore';
 
 const store = apiStore(api);
 const extraStore = {
@@ -19,11 +19,11 @@ const extraStore = {
         listByRoles({ commit }, { codes }) {
             return new Promise((resolve, reject) => {
                 api.listByRoles({ codes })
-                    .then((res) => {
+                    .then(res => {
                         commit('setState', { accountRoleList: res[RES_LIST] });
                         resolve(res[RES_LIST]);
                     })
-                    .catch((err) => reject(err));
+                    .catch(err => reject(err));
             });
         },
     },

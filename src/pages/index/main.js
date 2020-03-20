@@ -1,10 +1,10 @@
 import Vue from 'vue';
 import BootstrapVue from 'bootstrap-vue';
+import { helper } from '@/helper/lakes';
+import { utils } from '@/utils/rivers';
 import store from './store';
 import router from './helper/router';
 import App from './App.vue';
-import { helper } from '@/helper/lakes';
-import { utils } from '@/utils/rivers';
 
 // 过滤器
 import '@/utils/filters';
@@ -29,5 +29,5 @@ Vue.prototype.$utils = utils;
 window.vueIndex = new Vue({
     router,
     store,
-    render: (h) => h(App),
+    render: h => h(App),
 }).$mount('#app');

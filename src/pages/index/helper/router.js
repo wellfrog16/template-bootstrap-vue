@@ -1,6 +1,6 @@
 
-import createRouter from '../router';
 import { NProgress } from '@/utils/cdn';
+import createRouter from '../router';
 
 NProgress.configure({ showSpinner: false });
 

@@ -66,15 +66,15 @@ function axiosInstance(args) {
 
     let myReq = null;
 
-    instance.interceptors.request.use((request) => {
+    instance.interceptors.request.use(request => {
         const site = window.vueIndex.$helper.site();
         myReq = formatRequest(request);
         Object.assign(myReq.headers, site.headers); // todo深度合并防止bug
 
         return myReq;
-    }, (error) => Promise.reject(error));
+    }, error => Promise.reject(error));
 
-    instance.interceptors.response.use((response) => {
+    instance.interceptors.response.use(response => {
         const { data, config } = formatResponse(response);
 
         const status = [200, 201, 204];
@@ -115,7 +115,7 @@ function axiosInstance(args) {
             return Promise.reject(new Error(message));
         }
         return data.data;
-    }, (error) => { // 5xx, 4xx
+    }, error => { // 5xx, 4xx
         const { config } = error;
         let { message } = error;
         const noReryCode = [401];
@@ -146,7 +146,7 @@ function axiosInstance(args) {
             return Promise.reject(error);
         }
 
-        const backoff = new Promise((resolve) => {
+        const backoff = new Promise(resolve => {
             setTimeout(() => {
                 resolve();
             }, config.retryDelay || 1);

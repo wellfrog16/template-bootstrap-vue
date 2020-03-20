@@ -1,7 +1,7 @@
 import { PAGE, PAGE_SIZE } from '@/helper/constant';
+import { _ } from '@/utils/cdn';
 import devConfig from './dev';
 import prodConfig from './prod';
-import { _ } from '@/utils/cdn';
 // 基础配置，一些默认设置
 
 const settings = {
